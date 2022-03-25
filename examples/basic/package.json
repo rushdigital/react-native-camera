@@ -5,7 +5,8 @@
     "@babel/runtime": "^7.1.2",
     "babel": "^6.23.0",
     "react": "16.13.1",
-    "react-native": "0.63.2"
+    "react-native": "0.63.2",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
@@ -22,6 +23,9 @@
     "clear": "react-native start --reset-cache",
     "ios": "react-native run-ios",
     "start": "react-native start",
-    "test": "jest"
-  }
+    "test": "jest",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
